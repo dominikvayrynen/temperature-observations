@@ -1,5 +1,5 @@
 # Temperature Observations
-This tool analyses temperatures using data from Finnish Meteorological Stations. I build it to help with planning expeditions and hikes. Includes some defaults, and supports graphing of multiple years (ranges).
+This tool analyses temperatures using data from Finnish Meteorological Stations. I build it to help me with planning expeditions and hikes. Includes some defaults, and supports graphing of multiple years (ranges).
 
 
 ![cli interface](examples/cli.gif)
@@ -48,5 +48,7 @@ This will launch CLI interface, you can choose from predefined options, or a cus
 *Sources:*
 
 https://en.ilmatieteenlaitos.fi/open-data
+
 https://en.ilmatieteenlaitos.fi/observation-stations
-https://en.ilmatieteenlaitos.fi/download-observations#!/
+
+https://en.ilmatieteenlaitos.fi/download-observations
