@@ -27,7 +27,7 @@ pip install requests
 
 **Usage:**
 ```python
-python3 fmi.py
+python3 app.py
 ```
 This will launch CLI interface, you can choose from predefined options, or a custom option. For custom option you'll need to know ID of the observation station you want to fetch data from.
 
