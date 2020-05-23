@@ -33,7 +33,7 @@ This will launch CLI interface, you can choose from predefined options, or a cus
 
 
 
-**Observations station IDs (fmisid) examples:**
+**Station IDs (fmisid), examples:**
 ```
 102016 - Enontekiö Kilpisjärvi
 101920 - Rovaniemi airport 	
