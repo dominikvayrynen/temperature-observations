@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import requests
 
 def fetch_year(year, fmisid):
-    paramenters = {
+    parameters = {
         'service': 'WFS',
         'version': '2.0.0',
         'request': 'getFeature',
@@ -12,5 +12,5 @@ def fetch_year(year, fmisid):
         'fmisid': fmisid,
         'parameters': 'tmin',
     }
-    response = requests.get('http://opendata.fmi.fi/wfs', params=paramenters)
+    response = requests.get('http://opendata.fmi.fi/wfs', params=parameters)
     return ET.fromstring(response.text)
