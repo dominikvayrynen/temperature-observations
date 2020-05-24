@@ -1,20 +1,10 @@
-import xml.etree.ElementTree as ET
 import matplotlib.pyplot as PLT
-import requests
 import helpers
+import fmi
 
 def fetch_and_plot_data(year, fmisid):
-    url = "http://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=getFeature"
-    storedquery_id = "fmi::observations::weather::daily::simple"
-    starttime = str(year)+"-01-01T00:00:00Z"
-    endtime = str(year)+"-12-31T00:00:00Z"
-    fmisid = str(fmisid)
-    parameters = "tmin"
 
-    url = "{}&storedquery_id={}&starttime={}&endtime={}&parameters={}&fmisid={}".format(url, storedquery_id, starttime, endtime, parameters, fmisid)
-
-    response = requests.get(url)
-    data = ET.fromstring(response.text)
+    data = fmi.fetch_year(year, fmisid)
 
     temp = []
 
